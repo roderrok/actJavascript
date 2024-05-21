@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    function Portatil(marca,modelo,procesador,memoriaRam,discoDuro,pantallaPulgadas,tarjetaGrafica,sistemaOperativo){
+          this.marca =marca ;
+          this.modelo =modelo ;
+          this.procesador = procesador;
+          this.memoriaRam = memoriaRam;
+          this.discoDuro = discoDuro;
+          this.pantallaPulgadas = pantallaPulgadas;
+          this.tarjetaGrafica = tarjetaGrafica;
+          this.sistemaOperativo = sistemaOperativo;
+          this.informacion=function () {
+          console.log(`marca ${this.marca}  \n\rmodelo: ${this.modelo}  \n\rprocesadorn: ${this.procesador} \n\rcodigo memoriaRam: ${this.memoriaRam} \n\rdiscoDuro: ${this.discoDuro} \n\rpantallaPulgadas: ${this.pantallaPulgadas} \n\rtarjetaGrafica: ${this.tarjetaGrafica } \n\rsistemaOperativo ${this.sistemaOperativo}`);
+          }
+        }
+
+      const portatiles=[
+  portatil1= new Portatil("asus","tuf gaming","rayzen 5","16GB" ,"SSD 512GB","17 pulgadas","ndivia gtx","windows11 Pro"),
+  
+  
+
+  portatil2= new Portatil("HP","pavilion","intel 7","32GB" ,"SSD 1 TB","15 pulgadas","RTX 3050","sin sistema operativo"),
+ 
+
+  portatil3= new Portatil("Acer","aspire","rayzen 7 5700u","40GB" ,"2TB","l6 pulgadas","AMD Radeon","windows 10"),
+ ]
+
+
+
+    portatiles.splice(2,0,new Portatil("AGAPITO","aspire","rayzen 7 5700u","40GB" ,"2TB","l6 pulgadas","AMD Radeon","windows 10")); 
+    console.log(portatiles);//añade en la posicion 2 el portatil AGAPITO
+
+
+
+
+  </script>
+
+
+</body>
+</html>

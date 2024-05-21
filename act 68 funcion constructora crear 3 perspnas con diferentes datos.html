@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <script>
+    function persona(dni,nombre,apellidos,direccion,codigoPostal,ciudad,telefonoMovil,fechaDeNacimiento){
+          this.dni =dni ;
+          this.nombre =nombre ;
+          this.direccion = direccion;
+          this.codigoPostal = codigoPostal;
+          this.ciudad = ciudad;
+          this.telefonoMovil = telefonoMovil;
+          this.fechaDeNacimiento = fechaDeNacimiento;
+          this.detalle= function () {
+          console.log(`dni ${this.dni}  \n\rnombre: ${this.nombre}  \n\rdireccion: ${this.direccion} \n\rcodigo postal: ${this.codigoPostal} \n\rciudad: ${this.ciudad} \n\rtelefono movil: ${this.telefonoMovil} \n\rfecha de nacimiento: ${this.fechaDeNacimiento}`);
+          };
+  } 
+  var persona1= new persona("728953P","felix","corredor","la plaza 1","1234","soria","4633399","20-1-91");
+  persona1.detalle();
+  
+
+  var persona2= new persona("3213213213P","perico","palotes","merineros 3","8201","valencia","7827893298739","12-3-80");
+  persona2.detalle();
+
+  var persona3= new persona("8547895489759","lola","montes","la travesia 5","6302","león","68382920","30-5-05");
+  persona3.detalle();
+
+  </script>
+
+
+</body>
+</html>

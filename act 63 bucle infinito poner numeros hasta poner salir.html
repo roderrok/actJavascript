@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bucle infinito numero</h1>
+    <button onclick="solicitarnumero()">iniciar bucle</button>
+ 
+  <script type="text/javascript">
+    function solicitarnumero(){
+        let input="";
+        while(true){
+            input= prompt("introduce numero o escribe salir");
+            if(input==="salir"|| input==="SALIR"){
+                break;
+            }
+            if(!isNaN(parseInt(input))){
+                alert("numero introducido "+input);
+                //console.log("numero introducido "+input);FUNCIONARIA PERO EN LA CONSOLA.
+
+            
+            } else{
+                alert("introduce un numero valido");
+            }
+        }
+    }
+
+ </script>
+
+
+
+</body>
+</html>
+
+
+</body>
+</html>

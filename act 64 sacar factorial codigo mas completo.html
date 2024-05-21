@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>factorial</h1>
+    <input type="number" id="numero">
+    <button onclick="calcularfactorial()">calcular</button>
+    <div id="resultado"></div>
+  <script>
+    function calcularfactorial(){
+        let numero=document.getElementById("numero").value;
+        let factorial=1;
+        if(numero<0){
+            document.getElementById("resultado").innerHTML="el resultado no se puede hacer";
+        
+        } else if(numero==0){
+            document.getElementById("resultado").innerHTML="el factorial de 0 es 1";
+        
+        } else{
+            for(let i=1; i<=numero; i++){
+                factorial *=i;
+            }
+        } document.getElementById("resultado").innerHTML="el factorial de" + numero+ "es" + factorial;
+    }
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>el doble de un numero</h1>
+    <input type="number" id="num" placeholder="pon el numero">
+    <button onclick="dobleNumero()">calcular el doble del numero</button>
+    <div id="resultado"></div>
+  <script>
+    function dobleNumero(){
+        const numero= parseInt(document.getElementById("num").value);
+        const resultado=document.getElementById("resultado");
+         if(numero <0){
+          resultado.innerHTML= "el numero es negativo."
+          return;
+        } else if(numero===0){
+            resultado.innerHTML="el programa ha finalizado"
+            return;
+            
+        }else{
+            let doble= numero * 2;
+            resultado.innerHTML="el doble es: "+ doble;
+        }
+       
+    }
+
+
+    
+
+
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id="imagen" src="descarga.png" alt="">
+ <script>
+    //EVENTO ON ERROR (SUSTITUYE UNA IMAGEN POR SI FALLA OTRA.)
+    const imagen= document.getElementById("imagen");
+    imagen.onerror= function(){
+        console.log("error al cargar");
+        imagen.src="wolverine-removebg-preview.png"
+    }
+
+
+
+
+  
+
+</script>
+
+    
+ 
+
+
+</body>
+</html>
+
+

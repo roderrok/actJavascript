@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    function factorial(numero){
+       
+        if(numero==0 || numero==1){
+            console.log("entro en el if primer paso");
+            return 1;
+        } else{
+            console.log("entro en el else segundo paso")
+           return numero * (factorial(numero-1));
+        }
+    }
+
+    var numero, resultado;
+    numero= parseInt(prompt("introduce el numero"));
+    resultado=factorial(numero)
+    alert("el resultado es "+resultado);
+
+  </script>
+
+
+
+
+</body>
+</html>

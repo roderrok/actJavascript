@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+   //FORMA1
+    const array=[1,2,[3,4],5,6]
+    const result= array.flat();//ARRAY DENTRO DE ARRAY CON FLAT
+    console.log(result);// RESULTADO[1,2,3,4,5,6]
+   
+
+    //FORMA2
+  const array2=[1,2,[3,4,[5,6]]];
+  const result2=array2.flat();
+  console.log(result2);       // FLAT Y UNIR LOS ARRAYS
+  const result3=result2.flat();
+  console.log(result3);// RESULTADO[1,2,3,4,5,6]]
+
+
+  //FORMA4
+  const array4=[1,2,[3,4,[5,6,[7,8,[9,10]]]]];
+  const result4=array4.flat(Infinity); //FLAT INFINITY 
+  console.log(result4);
+  
+      
+ 
+
+
+ </script>
+
+
+</body>
+</html>

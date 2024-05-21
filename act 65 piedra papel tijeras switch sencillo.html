@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <script>
+var jugador1, jugador2;
+
+    while(jugador1==jugador2){
+    jugador1=parseInt (prompt("jugador 1 elige una opcion pon un numero (1= piedra, 2= papel, 3= tijeras.)"));
+    jugador2=parseInt (prompt("jugador 2 elige una opcion pon un numero (1= piedra, 2= papel, 3= tijeras.)"));
+    var piedra=1;
+    var papel=2;
+    var tijeras=3;
+
+  
+
+    switch(true){
+        case (jugador1==1 && jugador2==3):
+        alert("jugador 1 gana");
+        break;
+
+        case (jugador1==2 && jugador2==1):
+         alert("jugador 1 gana");
+         break;
+
+         case (jugador1==3 && jugador2==2):
+            alert("jugador 1 gana");
+            break;
+
+         case (jugador2==1 && jugador1==3):
+            alert("jugador 2 gana");
+            break;
+
+         case (jugador2==2 && jugador1==1):
+            alert("jugador 2 gana"); 
+            break;  
+           
+          case (jugador2==3 && jugador1==2):
+            alert("jugador 2 gana");  
+            break;
+
+          default:alert("empate");
+          
+          
+          
+
+        
+        
+
+    }
+}
+   /*if(jugador1==1 && jugador2==3){
+        alert("jugador 1 gana");
+
+    }
+        else if(jugador1==2 && jugador2==1){
+            alert("jugador 1 gana");
+
+
+        }
+        else if(jugador1==3 && jugador2==2){
+            alert("jugador 1 gana");
+
+
+        }
+        else if(jugador2==1 && jugador1==3){
+            alert("jugador 2 gana");
+
+
+
+        }
+        else if(jugador2==2 && jugador1==1){
+            alert("jugador 2 gana");
+
+
+        }
+        else if(jugador2==3 && jugador1==2){
+            alert("jugador 2 gana");
+        }
+        else{
+            alert("empate");
+        }
+}
+*/
+
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>suma de cuadrados de numeros</h1>
+  <div id="numeros"></div>
+  <div id="resultado"></div>
+
+  <script>
+    const numeros=[];
+  const arraylength=9;
+    for(let i=0;i<arraylength;i++){
+    const randomnumber=Math.floor(Math.random()*99)+1;
+  numeros.push(randomnumber);
+}
+
+let suma=0;
+for(let i=0;i<numeros.length;i++){
+    const number=numeros[i];
+  suma=suma+number**2;
+}
+
+console.log(suma);
+document.getElementById('numeros').innerHTML='los numeros del array son:' + numeros.join (',');
+document.getElementById('resultado').innerText='la suma de los cuadrados es: ' + suma;
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>

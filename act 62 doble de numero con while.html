@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+  <script type="text/javascript">
+    let numero= parseInt(prompt("introduce numero: "));
+    while(numero!=0){
+        if( numero<0){
+            alert("se ha interrumpido el ciclo");
+            break;
+        }else if(numero===0){
+            alert("finalizado");
+            break;
+        }
+        else{
+            let doble= numero*2;
+            alert("el doble de" + numero+ "es"+doble);
+        }
+        numero= parseInt(prompt("introduce 0 para salir"))
+    }
+
+
+
+
+
+ </script>
+
+
+
+</body>
+</html>

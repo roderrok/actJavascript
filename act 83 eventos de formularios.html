@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><form action="" onsubmit="enviarFormulario(); return false;" onreset="restablecerFormulario()">
+    <label for="Nombre">Nombre:</label><input type="text" id="Nombre" name="Nombre" onchange="cambioNombre()" onblur="validarNombre()" onfocus="resaltarNombre()"><br>
+    <label for="Email">Email:</label><input type="text" id="nombre" name="Email" onchange="cambioEmail()" onblur="validarEmail()" onfocus="resaltarEmail()"><br>
+    <label for="Contraseña">Contraseña:</label><input type="password" id="contrasena" name="contrasena" onblur="validarContrasena()"><br>
+    <label for="Comentario">Comentario:</label><textarea type="text" id="comentario" name="comentario" onselect="textoSelecionado()"></textarea><br><br>
+        <input type="submit" value="enviar"><br>
+        <input type="reset" value="reset"><br>
+    
+</form>
+<script>
+
+function cambioNombre(){
+    alert("elnombre ha cxambiado");
+}
+
+function cambioEmail(){
+    alert("el email ha cambiado");
+}
+
+function validarContrasena(){
+    console.log( "la contraseña ha sido validada");
+}
+
+function textoSelecionado(){
+    alert("el texto ha sido seleccionado");
+
+}
+
+function resaltarEmail(){
+    console.log("email resaltado");
+
+}
+function resaltarNombre(){
+    console.log("nombre resaltado");
+
+}
+
+function restablecerFormulario(){
+    alert("reestablecido formulario");
+
+}
+
+function enviarFormulario(){
+    alert("formulrio enviado");
+
+}
+</script>
+
+    
+ 
+
+
+</body>
+</html>
+
+

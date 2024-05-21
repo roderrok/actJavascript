@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <script>
+    var articulos=[
+      {nombre:`bici`,precio:3000},
+      {nombre:`tv`,precio:2500},
+      {nombre:`libro`,precio:320},
+      {nombre:`movil`,precio:10000},
+      {nombre:`portatil`,precio:20000},
+      {nombre:`teclado`,precio:500},
+      {nombre:`auriculares`,precio:1700},
+     
+    ];
+var algunarticulo= articulos.find(function(articulos){
+  return articulos.nombre === "portatil";
+});
+
+
+
+    console.log(algunarticulo);
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mensaje">cambia el tamaño de la ventana</h1>
+
+    
+
+<script>
+
+    var mensaje= document.getElementById("mensaje");
+    var ventana=window;
+
+    ventana.onresize= function(){mensaje.innerHTML="tamaño de la ventana" + ventana.innerWidth + "X" + ventana.innerHeight;
+
+    }
+
+
+
+   ventana.onmove=function(){
+    alert("la ventana se movió");//no suele funcionar en la mayoria de los navegadores modernos;
+   };
+
+</script>
+
+    
+ 
+
+
+</body>
+</html>
+
+
