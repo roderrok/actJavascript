@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var numeroI = 0;
+        var numeroO = prompt("Inserta el número que quieras: ");
+        var numeroOriginal = numeroO;
+    
+        while (numeroO > 0) {
+            var ultimo = numeroO % 10;
+            numeroI = (numeroI * 10) + ultimo;
+            numeroO = Math.floor(numeroO / 10);
+        }
+    
+        if (numeroOriginal == numeroI) {
+            alert("El número es capicúa");
+        } else {
+            alert("El número no es capicúa");
+        }
+    </script>
+</body>
+</html>

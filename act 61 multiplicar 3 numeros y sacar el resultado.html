@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> multiplicar 3 numeros</h1>
+    <input type="number" id="a" placeholder="introduce el primer numero">
+    <input type="number" id="b" placeholder="introduce el segundo numero">
+    <input type="number" id="c" placeholder="introduce el tercer numero">
+    <button id="verificar" onclick="multiplicacion()">verificar</button>
+    <div id="resultado"></div>
+  
+
+
+<script type="text/javascript">
+
+function multiplicacion(){
+a=parseInt(document.getElementById("a").value);
+b=parseInt(document.getElementById("b").value) ;
+c=parseInt(document.getElementById("c").value);
+var resultado= a*b*c;
+document.getElementById("resultado").innerHTML="el resultado " + "es: "+ resultado;
+
+
+
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

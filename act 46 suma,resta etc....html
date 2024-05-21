@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var num1,num2,operacion,resultado;
+    num1=prompt("introduce el primer numero: ");
+    num2=prompt("introdcue el segundo numero: ");
+    
+    
+    operacion=prompt("introduzca el operador(+,-,*,/):");
+
+    if(operacion=== "+"){
+        resultado= num1+num2;
+        alert("el resultado es" +resultado);
+
+    }
+    else if(operacion==="-"){
+        resultado=num1-num2;
+        alert("el resultado es" + resultado);
+    }
+
+    else if(operacion==="*"){
+        resultado=num1*num2;
+        alert("el resultado es" + resultado);
+    }
+
+    else if(operacion==="/"){
+        if (Number(num2)!==0){
+            resultado=num1/num2;
+            alert("el resultado es" +resultado);
+        }
+        else{ 
+            alert("no se puede dividir por cero");
+        }  
+
+       }
+
+    else{
+        alert("operacion no valida");
+    }
+    
+
+    
+
+    </script>
+</body>
+</html>

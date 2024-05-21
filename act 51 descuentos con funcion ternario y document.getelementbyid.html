@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>descuentos</h1>
+
+    <label for="cantidad">Numero de articulos</label>
+    <input type="number" id="cantidad" name="cantidad"><br><br>
+
+    <label for="precio">Precio total sin descuento(€)</label>
+    <input type="number" id="precio" name="precio"><br><br>
+
+    <button onclick="calcularDescuento()">calcular el precio final</button>
+
+    <p id="resultado"></p>
+        
+        <script type="text/javascript">
+
+var articulos,preciofinal,precio;
+
+
+function calcularDescuento(){
+
+    const cantidad=parseInt(document.getElementById("cantidad").value.replace('.',','));
+    const precio=parseFloat(document.getElementById("precio").value.replace('.',','));
+    const descuento= cantidad <=5 ? 0.1: cantidad <=10 ? 0.15: 0.2;//if (cantidad <=5){ -10%}  else if (cantidad <=10){ -15%} else{ -20%} LA "?" SIGNIFICA QUE SI SE CUMPLE Y ":" QUE NO SE CUMPLE.
+    const preciofinal=precio * (1 - descuento);
+    document.getElementById("resultado").innerHTML=" El precio final con descuento aplicado del " + descuento*100+ "% es " + preciofinal.toFixed(2).replace('.',',') + "€.";
+                
+            
+}
+        </script>
+
+
+</body>
+</html>

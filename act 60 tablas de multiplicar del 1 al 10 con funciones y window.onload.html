@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tablas de multiplicar</h1>
+    <div id="resultado"></div>
+   
+    
+  
+
+<script type="text/javascript">
+    window.onload= function(){
+        mostrarTalas();
+    }
+    
+  function mostrarTalas(){
+    let resultado="";
+     for(let numero=1; numero<=10; numero++ ){
+        resultado += "<h3>Tabla del " + numero + "</h3>";
+
+        for( let i=1; i<=10; i++){
+            resultado += numero + "X" +i+ "=" + numero *i + "<br>";
+
+        }
+        
+  }
+
+ document.getElementById("resultado").innerHTML= resultado;
+
+    
+   
+        
+    }
+
+
+   
+   
+
+</script>
+
+
+</body>
+</html>

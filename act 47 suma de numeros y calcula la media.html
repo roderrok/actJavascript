@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+var numero,suma,contador,media;
+suma=0;
+contador=0;
+numero=prompt("introducir numero: ");
+while(parseInt(numero)!==0){
+    suma=parseInt(suma)+parseInt(numero);//suma+=numero;(haria lo mismo)
+    contador=parseInt(contador)+1;//contador++ (haria lo mismo)
+    numero=prompt("introduzca otro numero(0 para terminar): ");
+
+}
+
+media=parseInt(suma) / parseInt(contador);
+alert("la suma es: " + parseInt(suma));
+alert("la media es: " + parseInt(media));
+
+    
+
+    </script>
+</body>
+</html>
