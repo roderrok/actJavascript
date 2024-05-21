@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jas.css">
+</head>
+<body>
+
+<img src="wolverine-removebg-preview.png" alt="wolverine1" onclick="onClickEvent1()">
+<img src="wolverine-removebg-preview.png" alt="wolverine2" ondblclick="onClickEvent2()">
+<img src="wolverine-removebg-preview.png" alt="wolverine3" onmousedown="onClickEvent3()" onmouseup="onClickEvent4()">
+<img src="wolverine-removebg-preview.png" alt="wolverine4" onmouseover="onClickEvent5()" onmouseout="onClickEvent7()">
+
+  <div id="numeritos"></div>
+  <div id="resultado"></div>
+  <button onclick="despedirse()">adios</button>
+
+
+  
+  <script>
+    window.onload=function(){
+      
+      alert("la pagina web ha cargado correctamente");
+    }
+    window.onbeforeunload=function (){
+      return "¿estas seguro de que quieres salir?";
+    }
+
+    window.onunload=function (){
+      return "la pagina se esta descargando";
+    }
+    function despedirse(){
+      alert("hasta otra");
+      window.close();
+    }
+
+  
+
+
+
+function onClickEvent1(){
+  alert("evento onclick");
+}
+function onClickEvent2(){
+  alert("evento onDbclick");
+}
+
+function onClickEvent3(){
+  alert("evento onMouseDown");
+}
+
+function onClickEvent4(){
+  alert("evento onMouseUp");
+}
+
+function onClickEvent5(){
+  alert("evento onMouseOver");
+}
+
+function onClickEvent6(){
+  alert("evento onMouseMove");
+}
+
+function onClickEvent7(){
+  alert("evento onMouseOut");
+}
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>

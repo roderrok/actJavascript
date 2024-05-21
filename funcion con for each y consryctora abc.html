@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+ /*function Contador(array){
+  this.sum=0;
+  this.count=0; 
+
+  for (let i=0; i<array.length; i++){
+    this.sum += array[i];
+    ++this.count;
+  }
+
+ }
+var obj=new Contador([2,9,5]);
+console.log(obj.count);
+console.log(obj.sum);*/
+
+
+function contador(array){
+  this.sum=0;
+  this.count=array.length;
+  array.forEach((value) => {
+    this.sum+=value;
+    
+  });
+}
+var obj=new contador([2,9,5]);
+console.log(obj.count);
+console.log(obj.sum);
+
+
+
+  </script>
+
+
+</body>
+</html>

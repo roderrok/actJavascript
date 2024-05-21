@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+  let pedidosAmazon=[
+    {
+      nombreCliente:"bruce banner",
+      total:60,
+      entregado:false,
+    },
+
+    {
+      nombreCliente:"steve rogers",
+      total:120,
+      entregado:true,
+    },
+
+    {
+      nombreCliente:"thor odinson",
+      total:180,
+      entregado:false,
+    },
+
+    {
+      nombreCliente:"tony stark",
+      total:240,
+      entregado:true,
+    },
+  ];
+
+ let nombreClientes=pedidosAmazon.map(pedido=>pedido.nombreCliente);
+ console.log(nombreClientes)
+
+
+
+
+  </script>
+
+
+</body>
+</html>

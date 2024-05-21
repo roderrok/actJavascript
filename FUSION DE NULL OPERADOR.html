@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    const elementos=["hola",null,"como","estas"];
+    let acumulador="";
+    const separador="/";
+    for(let i=0; i<elementos.length;i++){
+        const elemento=elementos[i]??"";
+        if(i!==elementos.length-1){
+            acumulador += elemento + separador;
+        } else{
+            acumulador+=elemento;
+        }
+    }
+ console.log(acumulador);
+ 
+  </script>
+
+
+</body>
+</html>
