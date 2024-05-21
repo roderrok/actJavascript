@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+  /*  //SORT (ORDENA LAS PALABRAS DEL ARRAY EN ORDEN ALFABÉTICO)
+const palabras=[
+  "dragón",
+  "réservé",
+  "perro",
+  "manzana",
+  "zorro",
+  "huerto",
+];
+  let resultado=palabras.sort((a,b)=>a.localeCompare(b));
+  console.log(resultado);
+*/
+
+  //SORT CON NUMEROS ORDENADOS PERO NO CORRECTAMENTE
+
+  const numeros=[1,30,2,21,100000];
+  var numerosorden= numeros.sort();
+  console.log(numerosorden); //resultado[1, 100000, 2, 21, 30]
+
+  /*para arreglar esto, y es necesario hacer las funciones comparativas*/
+
+
+  const numeros2=[1,30,2,21,100000];
+  var numerosorden= numeros2.sort((a,b)=>a-b);
+  console.log(numerosorden); //RESULTADO[1,2,21,30,100000] ASCENDENTE
+
+
+      
+  const numeros3=[1,30,2,21,100000];
+  var numerosorden= numeros3.sort((a,b)=>b-a);
+  console.log(numerosorden); //RESULTADO [100000,30,21,2,1] DESCENDENTE
+
+
+ </script>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    //ORDENAMIENTO DE OBJETOS
+    const ordenes=[
+      {
+        customername:"nico",
+        total:600,
+        delivered:true,
+      },
+      {
+        customername:"zule",
+        total:120,
+        delivered:false,
+      },
+      {
+        costomername:"Santi",
+        total:1840,
+        delivered:true
+      },
+      {
+        customername:"paco",
+        total:240,
+        delivered:true,
+      }
+    ];
+
+ordenes.sort((a,b)=>b.total-a.total);//SI QUEREMOS QUE SEA ASCENDENTE SERIA A-B
+console.log(ordenes);
+ </script>
+
+
+</body>
+</html>
